@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  node:
+    build:
+      context: ./
+      dockerfile: Dockerfile-node
+    volumes:
+      - ./:/var/www/project
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    command: ["npm", "run", "start"]
+    restart: on-failure
