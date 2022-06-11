@@ -39,7 +39,7 @@ html(lang='de')
                         li.nav-item
                             a.nav-link(href='#about') Über mich
                         li.nav-item
-                            a.nav-link(href='#services') Fähigkeiten
+                            a.nav-link(href='#skills') Fähigkeiten
                         li.nav-item
                             a.nav-link(href='#portfolio') Portfolio
                         li.nav-item
@@ -54,49 +54,59 @@ html(lang='de')
                         hr.divider
                     .col-lg-8.align-self-baseline
                         p.text-white-75.mb-5
-                            | Entwickler - Informatiker - Systemintegrator
+                            | Informatiker
+                        a.btn.btn-primary.btn-xl(href='#about') Über mich
 
         // About
         section#about.page-section.bg-primary
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8.text-center
-                        h2.text-white.mt-0 We've got what you need!
+                        h2.text-white.mt-0 Entwickler seit der ersten Stunde
                         hr.divider.divider-light
                         p.text-white-75.mb-4
-                            | Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!
-                        a.btn.btn-light.btn-xl(href='#services') Get Started!
+                            | Seit meiner Kindheit fasziniert mich das Schreiben von Programmen. Mit HTML und PHP
+                            | habe ich meine ersten Erfahrungen gesammelt. Das Browserspiel "Die Stämme" hat mir den Umgang
+                            | mit phpMyAdmin und Datenbanken näher gebracht.
+                        p.text-white-75.mb-4
+                            | Auf der weiterführenden Schule habe ich mit Freunden an weiteren Projekte gearbeitet.
+                            | Ein soziales Netzwerk für unsere Klasse und ein Browserspiel.
+                            | Pong mit PyGame und meine eigene 3D-Welt mit OpenGL in C++ zählen auch dazu.
+                        p.text-white-75.mb-4
+                            | Seit dem Start meiner Ausbildung zum Fachinformatiker verbringe ich sehr viel Zeit mit dem PHP-Framework Symfony.
+                            | In letzter Zeit auch viel Docker-Compose und JavaScript.
+                        a.btn.btn-light.btn-xl(href='#skills') Auf einen Blick
 
-        // Services
-        section#services.page-section
+        // Skills
+        section#skills.page-section
             .container.px-4.px-lg-5
-                h2.text-center.mt-0 At Your Service
+                h2.text-center.mt-0 Fähigkeiten
                 hr.divider
                 .row.gx-4.gx-lg-5
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
-                                i.bi-gem.fs-1.text-primary
-                            h3.h4.mb-2 Sturdy Themes
-                            p.text-muted.mb-0 Our themes are updated regularly to keep them bug free!
+                                i.bi.bi-code.fs-1.text-primary
+                            h3.h4.mb-2 Entwicklung
+                            p.text-muted.mb-0 PHP, JavaScript, SQL, Python. Symfony + VueJS. Docker
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
-                                i.bi-laptop.fs-1.text-primary
-                            h3.h4.mb-2 Up to Date
-                            p.text-muted.mb-0 All dependencies are kept current to keep things fresh.
+                                i.bi-cloud.fs-1.text-primary
+                            h3.h4.mb-2 Hosting
+                            p.text-muted.mb-0 Webserver, Nextcloud und Teamspeak-Server selbstverwaltet
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
                                 i.bi-globe.fs-1.text-primary
-                            h3.h4.mb-2 Ready to Publish
-                            p.text-muted.mb-0 You can use this design as is, or you can make changes!
+                            h3.h4.mb-2 CMS / Websites
+                            p.text-muted.mb-0 WordPress, GoHugo, One-Pager, Bootstrap
                     .col-lg-3.col-md-6.text-center
                         .mt-5
                             .mb-2
-                                i.bi-heart.fs-1.text-primary
-                            h3.h4.mb-2 Made with Love
-                            p.text-muted.mb-0 Is it really open source if it's not made with love?
+                                i.bi-laptop.fs-1.text-primary
+                            h3.h4.mb-2 IT Technik
+                            p.text-muted.mb-0 Netzwerkgestaltung, Support, Umsetzung, Sicherheit
 
         // Portfolio
         #portfolio
@@ -154,10 +164,29 @@ html(lang='de')
 
         // Call to action
         #contact
-        section.page-section.bg-dark.text-white
-            .container.px-4.px-lg-5.text-center
-                h2.mb-4 Schreiben Sie mir eine E-Mail
-                a.btn.btn-light.btn-xl(href='mailto:contact@fabian1998.de') E-Mail
+        section.page-section
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Auch hier zu finden
+                hr.divider
+                .row.gx-4.gx-lg-5
+                    .col-lg-4.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                a.text-decoration-none(href='https://www.linkedin.com/in/fabian-heinrich-b99b2823a/', target='_blank')
+                                    i.bi-linkedin.fs-1.text-primary
+                                    h3.h4.mb-2 LinkedIn
+                    .col-lg-4.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                a.text-decoration-none(href='https://github.com/Fabian-Heinrich', target='_blank')
+                                    i.bi-github.fs-1.text-primary
+                                    h3.h4.mb-2 GitHub
+                    .col-lg-4.col-md-6.text-center
+                        .mt-5
+                            .mb-2
+                                a.text-decoration-none(href='mailto:contact@fabian1998.de', target='_blank')
+                                    i.bi-envelope.fs-1.text-primary
+                                    h3.h4.mb-2 E-Mail
 
         // Footer
         footer.bg-light.py-5
